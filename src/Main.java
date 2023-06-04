@@ -23,8 +23,8 @@ public class Main {
             System.out.println(file.getName() + " - " + file.getSize() + " bytes");
         }
 
-        long maxSize = 2500;
-        List<FileData> filteredFiles = fileNavigator.filterBySize(path, maxSize);
+        long maxSize = 2000;
+        List<FileData> filteredFiles = fileNavigator.filterBySize(maxSize);
         System.out.println("Files at path " + path + " with size <= " + maxSize + " bytes:");
         for (FileData file : filteredFiles) {
             System.out.println(file.getName() + " - " + file.getSize() + " bytes");
